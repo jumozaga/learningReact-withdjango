@@ -6,7 +6,7 @@ const Lista = () => {
     return( 
         <ListStyled>
             {regioesBr && regioesBr.map( item => (
-                <ItemList>
+                <ItemList key={item.photo}>
                     <Photo src="/img/NordesteBrasil.jpg"></Photo>
                     <Informations>
                         <Name>{item.name}</Name>
@@ -16,10 +16,7 @@ const Lista = () => {
                     </Informations>
                 </ItemList>
             ))}
-        </ListStyled>
-
-
-    
+        </ListStyled>   
 
     
     )
