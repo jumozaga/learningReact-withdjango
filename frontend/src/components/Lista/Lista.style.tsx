@@ -27,7 +27,7 @@ export const Photo= styled('img')`
 export const Informations = styled('div')`
   
 `;
-export const Name = styled('li')`
+export const Name = styled('div')`
    margin: ${({theme}) => theme.spacing(2, 0, 0, 0)} ;
    font-weight: bold;
    font-family:'quicksand';
