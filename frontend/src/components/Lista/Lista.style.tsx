@@ -16,16 +16,21 @@ export const ListStyled = styled('ul')`
 
 `;
 export const ItemList = styled('li')`
-  list-style: none; ;
+  list-style: none;
 `;
 export const Photo= styled('img')`
-   width: 100%;
+   width: 350px;
+   height:350px;
+   border-radius: 20px;
+   border-color: ${({theme}) => theme.palette.primary.main};
 `;
 export const Informations = styled('div')`
   
 `;
 export const Name = styled('li')`
    margin: ${({theme}) => theme.spacing(2, 0, 0, 0)} ;
+   font-weight: bold;
+   font-family:'quicksand';
    
 `;
 export const Value = styled('p')`
@@ -35,6 +40,7 @@ export const Value = styled('p')`
 `;
 export const Descrition = styled('p')`
     word-break: break-word;
+    text-align: justify;
     font-weight: 150;
     color: ${({theme})=> theme.palette.text.secondary};
    

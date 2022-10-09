@@ -6,15 +6,9 @@ import Lista from '../src/components/Lista/Lista'
 
 const Home: NextPage = () => {
   return (
-    <>
-    <Box sx={{backgroundColor:'secondary.main'}}>
-
-    <Lista />
-
+    <Box sx={{backgroundColor: 'secondary.main'}}>
+      <Lista />
     </Box>
-    
-
-    </>
     
   )
 }

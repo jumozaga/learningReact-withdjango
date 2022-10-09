@@ -1,19 +1,20 @@
 import { CabecalhoContainer, Fundo, Logo } from "./Cabecalho.style";
 
 const Cabecalho =() =>{
-    return(
+    return(      
         
-        <Fundo>
+        <Fundo >
             <CabecalhoContainer>
-                <div>                
+                <div>
                     <Logo src="/img/02.png" />
                 </div>
-                <p> 
-                    BRASIL - REGIÕES BRASILEIRAS <br /> 
-                     <i>Meu primeiro React</i>
-                </p>
-             </CabecalhoContainer>
+            </CabecalhoContainer>
+            <p>
+                <h3><em>BRASIL REGIÕES BRASILEIRAS </em> <br />
+                <i>Meu primeiro React</i></h3>
+            </p>
         </Fundo>
+
 
     )
 }

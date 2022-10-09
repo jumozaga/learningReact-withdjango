@@ -2,7 +2,7 @@ import {styled} from "@mui/material"
 
 export const CabecalhoContainer = styled('header')`
     color: #082953;
-    width: 230px;
+    width: 350px;
     margin: 40px auto;
     text-align: center;
     align-items: center;    
@@ -10,8 +10,10 @@ export const CabecalhoContainer = styled('header')`
 export const Logo = styled('img')`
     width: 100%;
 `;
-export const Fundo = styled('header')`
+export const Fundo = styled('div')`
     background-image: url('https://miro.medium.com/max/660/1*OmGMQQL8rC-tbiI6uDZCvg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    align-items: center; 
 `;
