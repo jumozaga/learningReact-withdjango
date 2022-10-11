@@ -8,7 +8,7 @@ export const ListStyled = styled('ul')`
     
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    gap: ${({theme}) => theme.spacing(20)};
+    gap: ${({theme}) => theme.spacing(27)};
 
     ${({theme}) => theme.breakpoints.down('md')}{
         grid-template-columns: 1fr;
@@ -17,12 +17,18 @@ export const ListStyled = styled('ul')`
 `;
 export const ItemList = styled('li')`
   list-style: none;
+ 
 `;
+
 export const Photo= styled('img')`
    width: 350px;
    height:350px;
    border-radius: 20px;
    border-color: ${({theme}) => theme.palette.primary.main};
+`;
+export const EmpytList = styled('h3')`
+    text-align: center;
+    padding: ${({theme}) => theme.spacing(20,0)};
 `;
 export const Informations = styled('div')`
   

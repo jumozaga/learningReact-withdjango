@@ -3,14 +3,14 @@ import { createTheme } from '@mui/material';
 const tema = createTheme({
     palette: {
         primary: {
-            main: '#F52273',
+            main: '#006A4E',
         },
         secondary: {
             main: '#7ff8a3d1',
         },
         text: {
-            primary: '#F52273',
-            secondary: '#6c6767',
+            primary: '#002D62',
+            secondary: '#002D62',
         },
     },
     components: {
@@ -19,13 +19,13 @@ const tema = createTheme({
                 root: {
                     color: '#FFF',
                     borderRadius: '0',
-                    backgroundColor: '#F52273',
+                    backgroundColor: '#006A4E',
                     textTransform: 'none',
                     fontWeight: 'bold',
                     paddingTop: '12px',
                     paddingBottom: '12px',
                     ":hover": {
-                        backgroundColor: '#F52273',
+                        backgroundColor: '#00A877',
                     }
 
                 },
