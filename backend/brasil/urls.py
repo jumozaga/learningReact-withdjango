@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zona.views import home
+from zona.views import HomeApiView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home)
+    path('', HomeApiView.as_view(), name='home'),
 ]

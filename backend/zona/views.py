@@ -1,7 +1,7 @@
-from django.shortcuts import render
-from django.http import JsonResponse
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-# Create your views here.
-def home(request):
-   # return render(request, 'app/home.html')
-   return JsonResponse({'message': 'Hello, world!'})
+class HomeApiView(APIView):
+    def get(self, request, format=None):
+        return Response({'message': 'Hello, World!'}, status=200)
+    
