@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zona.views import HomeApiView
+from zona.views import  CadastrarEstadoApiView, RegiaoApiView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomeApiView.as_view(), name='home'),
+    #path('', HomeApiView.as_view(), name='home'),
+    path('regiao/', RegiaoApiView.as_view(), name='regiao'),
+    path('regiao/<int:id>/estado/', CadastrarEstadoApiView.as_view(), name='estado'),
 ]
