@@ -11,7 +11,7 @@ from zona.models import Estado, Regiao
 from zona.serializers import (
     RegiaoSerializer,
     CadastrarEstadoSerializer,
-    EstadoSerializer
+    EstadoSerializer,
     )
 
 
@@ -34,8 +34,16 @@ class CadastrarEstadoApiView(APIView):
             )
             estado.save()
             estado_serializer = EstadoSerializer(estado, many=False)
-            return Response(estado_serializer.data, status=HTTP_201_CREATED)
-        return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
+            return Response(
+                estado_serializer.data,
+                status=HTTP_201_CREATED
+                )
+        return Response(
+            { "message": "Erro ao cadastrar estado",
+              "errors": serializer.errors 
+            },
+            status=HTTP_400_BAD_REQUEST
+            )
 
     
     

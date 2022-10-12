@@ -13,10 +13,9 @@ class EstadoSerializer(serializers.Serializer):
         fields = '__all__'
 
 class CadastrarEstadoSerializer(serializers.Serializer):
-    name = serializers.CharField(max_length=100, null=False, blank=False)
-    population = serializers.CharField(max_length=100, null=False, blank=False)
-    photo = serializers.URLField(max_length=255, blank=False, null=False)
-    regiao = serializers.CharField(max_length=100, null=False, blank=False)
+    name = serializers.CharField(max_length=100)
+    population = serializers.IntegerField()
+    photo = serializers.ImageField()
 
 
 
